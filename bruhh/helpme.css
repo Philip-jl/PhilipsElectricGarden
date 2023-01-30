@@ -24,10 +24,12 @@
 .tile_resistor:hover{
     background-image: url('/Website Tileset SVG/tile 2 hover.svg');
     background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
 }
 .tile_resistor:active{
     background-image: url('/Website Tileset SVG/tile 2 active.svg');
     background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
 }
 .tile_node{
     display: flex;
@@ -44,10 +46,12 @@
 .tile_source:hover{
     background-image: url('/Website Tileset SVG/tile 5 hover.svg');
     background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
 }
 .tile_source:active{
     background-image: url('/Website Tileset SVG/tile 5 active.svg');
     background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
 }
 .tile_void{
     display: flex;
@@ -60,10 +64,12 @@
 .tile_cap:hover{
     background-image: url('/Website Tileset SVG/tile 7 hover.svg');
     background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
 }
 .tile_cap:active{
     background-image: url('/Website Tileset SVG/tile 7 active.svg');
     background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
 }
 .tile_speaker{
     display: flex;
@@ -72,10 +78,12 @@
 .tile_speaker:hover{
     background-image: url('/Website Tileset SVG/tile 8 hover.svg');
     background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
 }
 .tile_speaker:active{
     background-image: url('/Website Tileset SVG/tile 8 active.svg');
     background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
 }
 .tile_botleft{
     display: flex;
@@ -92,10 +100,14 @@
 .tile_return:hover{
     background-image: url('/Website Tileset SVG/tile 11 hover.svg');
     background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
+
 }
 .tile_return:active{
     background-image: url('/Website Tileset SVG/tile 11 active.svg');
     background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
+
 }
 .tile_botright{
     display: flex;
