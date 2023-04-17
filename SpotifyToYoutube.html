@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="bruhh/ppage_general.css">
     <link rel="stylesheet" href="bruhh/ppage_list.css">
     <link rel="stylesheet" href="bruhh/ppage_pspecific.css">
+    <link rel="stylesheet" href="bruhh/stypage_interface.css">
 
   </head>
   <body>
@@ -21,8 +22,59 @@
         <p class="disclaimer">
             Note: In this project I utilized ChatGPT for funzies, but I still had to learn some JavaScript to properly use the tool.
           </p>
+      <div id="main">
+        <div class="box">
+          <input type="text" id="spotify-input" placeholder="Enter Spotify playlist URL...">
+          <button id="convert-btn">Convert</button>
+        </div>
+        <div class="box" id="spotify-output"></div>
+        <div class="box" id="youtube-output"></div>
+        <button id="copy-btn">Copy</button>
       </div>
-        <script src="js/SpotifyToYoutube.js"></script>
+      <script src="https://github.com/calluswhatyouwant/spotify-web-sdk"></script>
+      <script src="https://github.com/google/google-api-javascript-client"></script>
+      <script src="js/SpotifyList.js"></script>
+      <script src="js/YouTubeList.js"></script>
+      <script>
+        // Get the necessary elements from the HTML
+        const inputBox = document.getElementById('spotify-input');
+        const convertBtn = document.getElementById('convert-btn');
+        const spotifyOutputBox = document.getElementById('spotify-output');
+        const youtubeOutputBox = document.getElementById('youtube-output');
+        const copyBtn = document.getElementById('copy-btn');
+        
+        // Event listener for the convert button
+        convertBtn.addEventListener('click', () => {
+          // Call the SpotifyList function and get the output
+          const spotifyOutput = SpotifyList(inputBox.value);
+          
+          // Display the output in the Spotify output box
+          spotifyOutputBox.innerHTML = '';
+          spotifyOutput.forEach((song) => {
+            const p = document.createElement('p');
+            p.innerText = song;
+            spotifyOutputBox.appendChild(p);
+          });
+          
+          // Call the YouTubeList function with the Spotify output as input and get the output
+          const youtubeOutput = YouTubeList(spotifyOutput);
+          
+          // Display the output in the YouTube output box
+          youtubeOutputBox.innerHTML = '';
+          youtubeOutput.forEach((video) => {
+            const p = document.createElement('p');
+            p.innerText = video;
+            youtubeOutputBox.appendChild(p);
+          });
+        });
+        
+        // Event listener for the copy button
+        copyBtn.addEventListener('click', () => {
+          // Copy the text in the YouTube output box to the clipboard
+          const text = youtubeOutputBox.innerText;
+          navigator.clipboard.writeText(text);
+        });
+      </script>
     </div>
   </body>
 </html>
