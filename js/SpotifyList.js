@@ -1,7 +1,7 @@
 const SpotifyList = {
     convertPlaylistToText: async function(playlistUrl) {
       const spotifyApi = new SpotifyWebApi();
-      const accessToken = 'YOUR_ACCESS_TOKEN_HERE'; // replace with actual access token
+      const accessToken = a653a18a293141fea6a896ff1f6ae0de; // replace with actual access token
       spotifyApi.setAccessToken(accessToken);
   
       // get playlist ID from URL
