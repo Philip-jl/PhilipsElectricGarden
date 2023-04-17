@@ -1,0 +1,125 @@
+
+.grid{
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.tile{
+    display: flex;
+    width: 100%;
+}
+.tile_topleft{
+    display: flex;
+    flex: 15%;
+}
+.tile_resistor{
+    display: flex;
+    flex: 25%;
+}
+.tile_resistor:hover{
+    background-image: url('/Website Tileset SVG/tile 2 hover.svg');
+    background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
+}
+.tile_resistor:active{
+    background-image: url('/Website Tileset SVG/tile 2 active.svg');
+    background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
+}
+.tile_node{
+    display: flex;
+    flex: 15%;
+}
+.tile_topright{
+    display: flex;
+    flex: 45%;
+}
+.tile_source{
+    display: flex;
+    flex: 15%;
+}
+.tile_source:hover{
+    background-image: url('/Website Tileset SVG/tile 5 hover.svg');
+    background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
+}
+.tile_source:active{
+    background-image: url('/Website Tileset SVG/tile 5 active.svg');
+    background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
+}
+.tile_void{
+    display: flex;
+    flex: 25%;
+}
+.tile_cap{
+    display: flex;
+    flex: 15%;
+}
+.tile_cap:hover{
+    background-image: url('/Website Tileset SVG/tile 7 hover.svg');
+    background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
+}
+.tile_cap:active{
+    background-image: url('/Website Tileset SVG/tile 7 active.svg');
+    background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
+}
+.tile_speaker{
+    display: flex;
+    flex: 45%;
+}
+.tile_speaker:hover{
+    background-image: url('/Website Tileset SVG/tile 8 hover.svg');
+    background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
+}
+.tile_speaker:active{
+    background-image: url('/Website Tileset SVG/tile 8 active.svg');
+    background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
+}
+.tile_botleft{
+    display: flex;
+    flex: 15%;
+}
+.tile_wire{
+    display: flex;
+    flex: 25%;
+}
+.tile_return{
+    display: flex;
+    flex: 15%;
+}
+.tile_return:hover{
+    background-image: url('/Website Tileset SVG/tile 11 hover.svg');
+    background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
+
+}
+.tile_return:active{
+    background-image: url('/Website Tileset SVG/tile 11 active.svg');
+    background-repeat: no-repeat;
+    /* cursor: url(/specialimages/multimeter.png), auto; */
+
+}
+.tile_botright{
+    display: flex;
+    flex: 45%;
+}
+/*
+.chicken{
+    display: flex;
+    flex: 10%;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+*/
+
